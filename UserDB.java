@@ -13,10 +13,7 @@ import java.util.Map;
  */
 public class UserDB {
     
-    private static HashMap<String,User> users = new HashMap<>(){{
-        users.put("edu", new User("edu", "1234abcd", "edu@t-systems.com"));      
-        users.put("javi", new User("javi", "123", "javi@t-systems.com"));
-    }};
+    private static HashMap<String,User> users = new HashMap<>();
     
     public static User getUser(String username){
         return users.get(username);
